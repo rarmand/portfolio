@@ -1,12 +1,10 @@
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
-      <header>
-        <h1 className='text-4xl font-bold'>Aleksandra Holik</h1>
-        <h2 className='text-2xl font-semibold'>I am a creator, not a coder.</h2>
-      </header>
+    <div className='border-orange-500 border-2'>
+      <Header />
       <main>
         <p>
           Hey, I am a young programmer, who loves creating and building
@@ -14,7 +12,7 @@ function App() {
         </p>
       </main>
       <footer></footer>
-    </>
+    </div>
   );
 }
 
