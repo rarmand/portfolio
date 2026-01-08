@@ -1,15 +1,13 @@
 import "./App.css";
+import About from "./components/About";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div className='border-orange-500 border-2'>
+    <div className='min-h-screen flex flex-col'>
       <Header />
       <main>
-        <p>
-          Hey, I am a young programmer, who loves creating and building
-          functional and beautiful websites.
-        </p>
+        <About />
       </main>
       <footer></footer>
     </div>
