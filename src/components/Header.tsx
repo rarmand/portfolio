@@ -1,12 +1,13 @@
 import LinkedInIcon from "../assets/icons/linkedin_icon.svg";
 import GithubIcon from "../assets/icons/github_icon.svg";
 import MailIcon from "../assets/icons/mail_icon.png";
+import ResumeIcon from "../assets/icons/resume_icon.png";
 
 function Header() {
   return (
     <header className='bg-fuchsia-300 text-black'>
       <div className='container mx-auto flex flex-row items-center justify-between py-8'>
-        <h1 className='flex text-4xl'>Aleksandra Holik</h1>
+        <h1 className='flex text-2xl'>Aleksandra Holik</h1>
         <div className='flex flex-row items-center gap-8'>
           <nav>
             <ul className='flex flex-row gap-8'>
@@ -14,7 +15,7 @@ function Header() {
                 <a href='#about'>About me</a>
               </li>
               <li>
-                <a href='#certificates'>Certificates</a>
+                <a href='#experience'>My experience</a>
               </li>
               <li>
                 <a href='#projects'>Projects</a>
@@ -25,23 +26,56 @@ function Header() {
           <nav className=''>
             <ul className='flex flex-row gap-6'>
               <li>
-                <img width='50' height='50' src={MailIcon} alt='Mail contact' />
+                <a target='_blank' href='mailto:holik.alek@gmail.com'>
+                  <img
+                    width='32'
+                    height='32'
+                    src={MailIcon}
+                    alt='Mail contact'
+                  />
+                </a>
               </li>
               <li>
-                <img
-                  width='50'
-                  height='50'
-                  src={LinkedInIcon}
-                  alt='LinkedIn profile'
-                />
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.linkedin.com/in/aleksandra-holik/'
+                >
+                  <img
+                    width='32'
+                    height='32'
+                    src={LinkedInIcon}
+                    alt='LinkedIn profile'
+                  />
+                </a>{" "}
               </li>
               <li>
-                <img
-                  width='50'
-                  height='50'
-                  src={GithubIcon}
-                  alt='Github profile'
-                />
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://github.com/rarmand'
+                >
+                  <img
+                    width='32'
+                    height='32'
+                    src={GithubIcon}
+                    alt='Github profile'
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  target='_blank'
+                  href='/resume/CV_Holik_Aleksandra.pdf'
+                  download
+                >
+                  <img
+                    width='32'
+                    height='32'
+                    src={ResumeIcon}
+                    alt='Resume PDF file'
+                  />
+                </a>
               </li>
             </ul>
           </nav>
