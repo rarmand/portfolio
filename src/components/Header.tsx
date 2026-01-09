@@ -5,7 +5,7 @@ import ResumeIcon from "../assets/icons/resume_icon.png";
 
 function Header() {
   return (
-    <header className='bg-fuchsia-300 text-black'>
+    <header className='text-black shadow-xl sticky top-0'>
       <div className='container mx-auto flex flex-row items-center justify-between py-8'>
         <h1 className='flex text-2xl'>Aleksandra Holik</h1>
         <div className='flex flex-row items-center gap-8'>
