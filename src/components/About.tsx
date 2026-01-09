@@ -1,17 +1,55 @@
 function About() {
   return (
     <section id='about'>
-      <div className='container'>
-        <h2>About me</h2>
+      <div className='container flex flex-col gap-10 py-20 mx-auto px-4'>
+        <p>Thank you for checking out my portfolio!</p>
+
         <p>
-          I am a motivated IT professional with over two years of frontend
-          development experience. I have a great interest in data protection and
-          cybersecurity as well as in creation of useful tools for mobile and
-          web. I am conscientious, goal-oriented, eager to learn and grow. I am
-          not afraid to ask questions or admit gaps in knowledge. With a degree
-          in computer science and several years of IT experience, I am confident
-          I can bring valuable skills to your team.
+          My name is <b>Aleksandra</b> (Ola for short).
         </p>
+
+        <p>
+          I'm a <b>frontend developer with 2+ years</b> of professional
+          experience and a graduate of AGH University of Science and Technology
+          in Krakow, Poland.
+        </p>
+
+        <p>
+          I build responsive websites with a strong focus on clean code, modern
+          design and thoughtful user experience. I love turning ideas into a
+          live project and presenting the unique value of a product.
+        </p>
+
+        <p>
+          I work with a React library, JavaScript and TypeScript, HTML5 and Sass
+          - "CSS with superpowers". I enjoy learning new technologies and
+          broadening my knowledge across the web development field.
+        </p>
+
+        {/* <h3>My technology stack</h3>
+
+        <ul>
+          <li>JavaScript (ES6+)</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Tailwind CSS</li>
+          <li>CSS Modules</li>
+          <li>Sass</li>
+          <li>GraphQL</li>
+          <li>Git</li>
+          <li>Figma</li>
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Linux</li>
+          <li>MAC OS</li>
+          <li>Jira</li>
+          <li>React Testing Library</li>
+          <li>Jest</li>
+          <li>Cucumber</li>
+        </ul> */}
       </div>
     </section>
   );

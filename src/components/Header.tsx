@@ -14,12 +14,12 @@ function Header() {
               <li>
                 <a href='#about'>About me</a>
               </li>
-              <li>
+              {/* <li>
                 <a href='#experience'>My experience</a>
               </li>
               <li>
                 <a href='#projects'>Projects</a>
-              </li>
+              </li> */}
             </ul>
           </nav>
 
