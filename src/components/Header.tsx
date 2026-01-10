@@ -1,3 +1,6 @@
+// TODO: add responsive menu for mobile devices
+// TODO: info about languages to work with
+
 function Header() {
   return (
     <header className='fixed top-0 left-0 right-0 bg-slate-50'>
