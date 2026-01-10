@@ -2,6 +2,7 @@ import LinkedInIcon from "../assets/icons/linkedin_icon.svg";
 import GithubIcon from "../assets/icons/github_icon.svg";
 import MailIcon from "../assets/icons/mail_icon.png";
 
+// TODO: czy zmenić resume a na button?
 function Hero() {
   return (
     <section id='hero' className='h-screen flex'>
