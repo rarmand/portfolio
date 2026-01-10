@@ -5,7 +5,7 @@ import ResumeIcon from "../assets/icons/resume_icon.png";
 
 function Header() {
   return (
-    <header className='text-black shadow-xl sticky top-0'>
+    <header className='sticky top-0'>
       <div className='container mx-auto flex flex-row items-center justify-between py-8'>
         <h1 className='flex text-2xl'>Aleksandra Holik</h1>
         <div className='flex flex-row items-center gap-8'>
@@ -14,16 +14,25 @@ function Header() {
               <li>
                 <a href='#about'>About me</a>
               </li>
-              {/* <li>
-                <a href='#experience'>My experience</a>
+              <li>
+                <a href='#skills'>Skills</a>
+              </li>
+              <li>
+                <a href='#experience'>Experience</a>
+              </li>
+              <li>
+                <a href='#education'>Education</a>
               </li>
               <li>
                 <a href='#projects'>Projects</a>
-              </li> */}
+              </li>
+              <li>
+                <a href='#contact'>Contact</a>
+              </li>
             </ul>
           </nav>
 
-          <nav className=''>
+          {/* <nav className=''>
             <ul className='flex flex-row gap-6'>
               <li>
                 <a target='_blank' href='mailto:holik.alek@gmail.com'>
@@ -78,7 +87,7 @@ function Header() {
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </header>
