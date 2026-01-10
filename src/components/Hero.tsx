@@ -1,12 +1,11 @@
 import LinkedInIcon from "../assets/icons/linkedin_icon.svg";
 import GithubIcon from "../assets/icons/github_icon.svg";
 import MailIcon from "../assets/icons/mail_icon.png";
-import ResumeIcon from "../assets/icons/resume_icon.png";
 
 function Hero() {
   return (
-    <section id='hero' className='h-100'>
-      <div className='container mx-auto py-20 flex flex-col items-center'>
+    <section id='hero' className='h-screen flex'>
+      <div className='container m-auto flex flex-col items-center'>
         <div>
           <h3>Hello!</h3>
           <h1>I'm Ola</h1>
@@ -47,29 +46,16 @@ function Hero() {
                 />
               </a>
             </li>
-            <li>
-              <a
-                target='_blank'
-                href='/resume/CV_Holik_Aleksandra.pdf'
-                download
-              >
-                <img
-                  width='32'
-                  height='32'
-                  src={ResumeIcon}
-                  alt='Resume PDF file'
-                />
-              </a>
-            </li>
           </ul>
         </nav>
         <div>
-          <button
-            type='button'
-            className='py-2 px-4 bg-teal-500  text-white shadow-sm border-0 btn-primary'
+          <a
+            href='/resume/CV_Holik_Aleksandra.pdf'
+            download
+            className='block bg-teal-500 rounded text-white uppercase font-semibold py-2 px-8 shadow-sm border-0 btn-primary'
           >
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </section>
