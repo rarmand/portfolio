@@ -1,31 +1,46 @@
+import SkillsList from "./ui/SkillsList";
+
 function Skills() {
+  const frontendSkills = [
+    "React",
+    "Vite",
+    "NextJS",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Tailwind CSS",
+    "CSS Modules",
+  ];
+  const backendSkills = ["GraphQL"];
+  const testingSkills = ["React Testing Library", "Jest", "Cucumber"];
+  const uxUiTools = ["Responsive Design", "Figma"];
+  const tools = [
+    "Git",
+    "Jira",
+    "Firebase",
+    "Linux",
+    "MAC OS",
+    "Windows",
+    "Visual Studio Code",
+    "JetBrains WebStorm",
+  ];
+  const mobileSkills = ["Flutter", "Dart"];
+  const cybersecuritySkills = ["Bash", "TryHackMe courses", "Hack The Box"];
+
   return (
     <section id='skills' className='h-screen flex'>
-      <div className='container m-auto flex flex-col gap-10'>
-        <h3>My technology stack</h3>
+      <div className='container m-auto flex flex-wrap gap-10'>
+        <h3>My technology stack:</h3>
 
-        <ul>
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Tailwind CSS</li>
-          <li>CSS Modules</li>
-          <li>Sass</li>
-          <li>GraphQL</li>
-          <li>Git</li>
-          <li>Figma</li>
-          <li>Flutter</li>
-          <li>Dart</li>
-          <li>Linux</li>
-          <li>MAC OS</li>
-          <li>Jira</li>
-          <li>React Testing Library</li>
-          <li>Jest</li>
-          <li>Cucumber</li>
-        </ul>
+        <SkillsList skills={frontendSkills} name='Frontend Development' />
+        <SkillsList skills={backendSkills} name='Backend Development' />
+        <SkillsList skills={testingSkills} name='Testing' />
+        <SkillsList skills={uxUiTools} name='UI/UX Tools' />
+        <SkillsList skills={tools} name='Tools' />
+        <SkillsList skills={mobileSkills} name='Mobile development' />
+        <SkillsList skills={cybersecuritySkills} name='Cybersecurity' />
       </div>
     </section>
   );
