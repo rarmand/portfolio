@@ -1,3 +1,5 @@
+// TODO: add animations or pictures for deeper engagement
+
 function About() {
   return (
     <section id='about' className='h-screen flex'>
@@ -26,9 +28,9 @@ function About() {
         </p>
 
         <p>
-          I enjoy learning new technologies and broadening my knowledge across
-          the web development field. I am fascinated by the cybersecurity
-          concepts and how they can be applied to protect digital assets.
+          I enjoy learning new technologies and expanding my knowledge in the
+          field of web development. I'm fascinated by the cybersecurity concepts
+          and how they can be applied to protect digital assets.
         </p>
       </div>
     </section>
