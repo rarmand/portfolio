@@ -1,10 +1,15 @@
+import { techStack, type TechIdType } from "../../data/TechStack";
+
 type SkillBlockPropsType = {
-  name: string;
+  techId: TechIdType;
 };
 
-function SkillBlock({ name }: SkillBlockPropsType) {
+function SkillBlock({ techId }: SkillBlockPropsType) {
+  const { name, iconPath } = techStack[techId];
+
   return (
-    <div className='border border-solid border-indigo-600 rounded-2xl p-3'>
+    <div className='border border-solid border-indigo-600 rounded-2xl p-3 flex flex-row gap-2 items-center text-sm'>
+      <img src={iconPath} width={20}></img>
       {name}
     </div>
   );

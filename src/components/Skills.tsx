@@ -1,46 +1,47 @@
+import type { TechIdType } from "../data/TechStack";
 import SkillsList from "./ui/SkillsList";
 
 function Skills() {
-  const frontendSkills = [
-    "React",
-    "Vite",
-    "NextJS",
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "HTML5",
-    "CSS3",
-    "Sass",
-    "Tailwind CSS",
-    "CSS Modules",
+  const frontendSkills: TechIdType[] = [
+    "react",
+    "vite",
+    "nextjs",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "sass",
+    "tailwindcss",
+    "cssmodules",
   ];
-  const backendSkills = ["GraphQL"];
-  const testingSkills = ["React Testing Library", "Jest", "Cucumber"];
-  const uxUiTools = ["Responsive Design", "Figma"];
-  const tools = [
-    "Git",
-    "Jira",
-    "Firebase",
-    "Linux",
-    "MAC OS",
-    "Windows",
-    "Visual Studio Code",
-    "JetBrains WebStorm",
+  const backendSkills: TechIdType[] = ["graphql"];
+  const testingSkills: TechIdType[] = ["rtl", "jest", "cucumber"];
+  const uxUiTools: TechIdType[] = ["rwd", "figma"];
+  const tools: TechIdType[] = [
+    "git",
+    "jira",
+    "firebase",
+    "linux",
+    "macos",
+    "windows",
+    "vscode",
+    "webstorm",
   ];
-  const mobileSkills = ["Flutter", "Dart"];
-  const cybersecuritySkills = ["Bash", "TryHackMe courses", "Hack The Box"];
+  const mobileSkills: TechIdType[] = ["flutter", "dart"];
+  const cybersecuritySkills: TechIdType[] = ["bash", "tryhackme", "hackthebox"];
 
   return (
     <section id='skills' className='h-screen flex'>
       <div className='container m-auto flex flex-wrap gap-10'>
         <h3>My technology stack:</h3>
 
-        <SkillsList skills={frontendSkills} name='Frontend Development' />
-        <SkillsList skills={backendSkills} name='Backend Development' />
-        <SkillsList skills={testingSkills} name='Testing' />
-        <SkillsList skills={uxUiTools} name='UI/UX Tools' />
-        <SkillsList skills={tools} name='Tools' />
-        <SkillsList skills={mobileSkills} name='Mobile development' />
-        <SkillsList skills={cybersecuritySkills} name='Cybersecurity' />
+        <SkillsList skills={frontendSkills} title='Frontend Development' />
+        <SkillsList skills={backendSkills} title='Backend Development' />
+        <SkillsList skills={testingSkills} title='Testing' />
+        <SkillsList skills={uxUiTools} title='UI/UX Tools' />
+        <SkillsList skills={tools} title='Tools' />
+        <SkillsList skills={mobileSkills} title='Mobile development' />
+        <SkillsList skills={cybersecuritySkills} title='Cybersecurity' />
       </div>
     </section>
   );
