@@ -32,16 +32,18 @@ function Skills() {
 
   return (
     <section id='skills' className='h-screen flex'>
-      <div className='container m-auto flex flex-wrap gap-10'>
+      <div className='container m-auto sm:px-4 flex flex-wrap gap-10'>
         <h3>My technology stack:</h3>
+        <div className='grid lg:grid-cols-3 gap-4 items-start md:grid-cols-2 sm:grid-cols-1'>
+          <SkillsList skills={frontendSkills} title='Frontend Development' />
+          <SkillsList skills={tools} title='Tools' />
+          <SkillsList skills={testingSkills} title='Testing' />
 
-        <SkillsList skills={frontendSkills} title='Frontend Development' />
-        <SkillsList skills={backendSkills} title='Backend Development' />
-        <SkillsList skills={testingSkills} title='Testing' />
-        <SkillsList skills={uxUiTools} title='UI/UX Tools' />
-        <SkillsList skills={tools} title='Tools' />
-        <SkillsList skills={mobileSkills} title='Mobile development' />
-        <SkillsList skills={cybersecuritySkills} title='Cybersecurity' />
+          <SkillsList skills={backendSkills} title='Backend Development' />
+          <SkillsList skills={uxUiTools} title='UI/UX Tools' />
+          <SkillsList skills={mobileSkills} title='Mobile development' />
+          <SkillsList skills={cybersecuritySkills} title='Cybersecurity' />
+        </div>
       </div>
     </section>
   );

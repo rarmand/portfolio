@@ -8,7 +8,7 @@ type SkillsListPropsType = {
 
 function SkillsList({ skills, title }: SkillsListPropsType) {
   return (
-    <div className='border border-solid border-indigo-600 rounded-md p-6 gap-6 flex flex-col text-left'>
+    <div className='border border-solid border-indigo-600 rounded-lg p-5 gap-6 flex flex-col text-left'>
       <h3 className=''>{title}</h3>
 
       <ul className='flex flex-row flex-wrap gap-2'>
