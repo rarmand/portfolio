@@ -20,21 +20,20 @@ function Skills() {
   const tools: TechIdType[] = [
     "git",
     "jira",
-    "firebase",
+    "vscode",
+    "webstorm",
     "linux",
     "macos",
     "windows",
-    "vscode",
-    "webstorm",
   ];
-  const mobileSkills: TechIdType[] = ["flutter", "dart"];
+  const mobileSkills: TechIdType[] = ["flutter", "dart", "firebase"];
   const cybersecuritySkills: TechIdType[] = ["bash", "tryhackme", "hackthebox"];
 
   return (
     <section id='skills' className='h-screen flex'>
       <div className='container m-auto sm:px-4 flex flex-wrap gap-10'>
         <h3>My technology stack:</h3>
-        <div className='grid lg:grid-cols-3 gap-4 items-start md:grid-cols-2 sm:grid-cols-1'>
+        <div className='grid lg:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1'>
           <SkillsList skills={frontendSkills} title='Frontend Development' />
           <SkillsList skills={tools} title='Tools' />
           <SkillsList skills={testingSkills} title='Testing' />
